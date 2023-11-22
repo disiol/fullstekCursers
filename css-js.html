@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додавання CSS та JavaScript до вашого HTML-документа</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .answer {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Часто задавані питання</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#q1">1. Роль HTML, CSS та JavaScript</a></li>
+            <li><a href="#q2">2. Атрибут `style` у HTML</a></li>
+            <li><a href="#q3">3. Підключення CSS до HTML</a></li>
+            <li><a href="#q4">4. Функція `addEventListener` у JavaScript</a></li>
+            <li><a href="#q5"> Практичне питання: Кнопка та Сповіщення</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <h2 id="q1">1. Яка роль HTML, CSS та JavaScript у створенні веб-сторінки?</h2>
+    <div class="answer">
+        <p>HTML (<em>HyperText Markup Language</em>) відповідає за структуру сторінки. CSS (<em>Cascading Style
+            Sheets</em>)
+            відповідає за стиль і вигляд сторінки. JavaScript використовується для реалізації динамічності і взаємодії
+            на
+            сторінці.</p>
+    </div>
+
+    <h2 id="q2">2. Що робить атрибут `style` у HTML?</h2>
+    <div class="answer">
+        <p>Атрибут `style` в HTML використовується для визначення стилів елемента без використання зовнішнього CSS.
+            Наприклад: <code>&lt;p style="color: red;"&gt;Це червоний текст&lt;/p&gt;</code>.</p>
+    </div>
+
+    <h2 id="q3">3. Як можна підключити зовнішній та внутрішній файл CSS до вашого HTML-документа?</h2>
+    <div class="answer">
+        <p>Для зовнішнього CSS використовуйте тег `<code>&lt;link&gt;</code>`: <code>&lt;link rel="stylesheet"
+            href="styles.css"&gt;</code>. Для внутрішнього CSS використовуйте тег `<code>&lt;style&gt;</code>` в `<code>&lt;head&gt;</code>`
+            секції або атрибут `style` в тегах елементів.</p>
+    </div>
+
+    <h2 id="q4">4. Що робить функція `addEventListener` у JavaScript?</h2>
+    <div class="answer">
+        <p>Функція `addEventListener` в JavaScript використовується для додавання обробників подій до елементів.
+            Наприклад,
+            <code>element.addEventListener('click', function(){ /* ваш код */ });</code> додасть обробник події "клік"
+            до
+            елемента.</p>
+    </div>
+
+    <h2 id="q5">Практичне питання: Створіть HTML-документ з кнопкою та сповіщенням</h2>
+    <div class="answer">
+        <p>Створіть HTML-документ з кнопкою. При натисканні на кнопку має з'явитися сповіщення (alert) з текстом "Ви
+            натиснули на кнопку!". Використайте вбудований JavaScript для реалізації цієї інтерактивності.</p>
+
+        <button onclick="alert('Ви натиснули на кнопку!')">Натисніть мене</button>
+    </div>
+</main>
+
+</body>
+</html>
