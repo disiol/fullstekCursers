@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Використання iframe для вбудовування вмісту з іншого веб-сайту</title>
+</head>
+<body>
+
+<main>
+    <h1>Відповіді на питання про iframes</h1>
+
+    <ul>
+        <li><a href="#question1">1. Що таке iframes в контексті HTML?</a></li>
+        <li><a href="#question2">2. Для чого використовується атрибут "loading" в тегу iframe?</a></li>
+        <li><a href="#question3">3. Чим може бути обмежена можливість вбудовування контенту з інших веб-сайтів через
+            iframes?</a></li>
+        <li><a href="#question4">4. Які основні атрибути використовуються для налаштування iframes?</a></li>
+    </ul>
+
+    <h2 id="question1">1. Що таке iframes в контексті HTML?</h2>
+    <p>iframes (inline frames) - це HTML-елемент, який дозволяє вбудовувати інший документ в поточний документ.</p>
+
+    <h2 id="question2">2. Для чого використовується атрибут "loading" в тегу iframe?</h2>
+    <p>Атрибут "loading" вказує браузеру, як поводитися з завантаженням вмісту iframe. Значення "lazy" робить
+        завантаження лінивим (тобто завантажується тільки при необхідності).</p>
+
+    <h2 id="question3">3. Чим може бути обмежена можливість вбудовування контенту з інших веб-сайтів через iframes?</h2>
+    <p>Можливість вбудовування контенту може бути обмежена політикою безпеки браузера (Content Security Policy), а також
+        налаштуваннями сервера, з якого намагається вбудуватися контент.</p>
+
+    <h2 id="question4">4. Які основні атрибути використовуються для налаштування iframes?</h2>
+    <p>Деякі основні атрибути iframe включають "src" (URL вмісту), "width" та "height" (розміри), "frameborder"
+        (відображення/приховання обрамлення), "sandbox" (обмеження доступу до функцій).</p>
+
+    <h2>Практичне питання, що вимагає написання коду:</h2>
+    <p> Зверніть увагу на приклад з Google Maps, наведений в уроці. Напишіть код для вбудовування карти з вашого
+        улюбленого міста в iframes.</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54953.40825931096!2d23.99632915755942!3d49.84182374184747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1700653034797!5m2!1suk!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</main>
+</body>
+</html>
